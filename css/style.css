@@ -481,4 +481,76 @@ body {
   animation: fadeInScale 0.25s ease forwards;
 }
 
+/* ================= MODERN PRODUCT DETAIL PAGE (PDP) STYLES ================= */
+/* Clean White & Gray Aesthetic Utilities */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Product Card Quick Action Hover Buttons */
+.product-card-quick-actions {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.product-card:hover .product-card-quick-actions {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* PDP Thumbnail Strip Button */
+.pdp-thumb-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pdp-thumb-btn:hover {
+  transform: scale(1.04);
+}
+
+/* PDP Size Button */
+.pdp-size-btn {
+  transition: all 0.2s ease;
+}
+
+.pdp-size-btn:hover {
+  border-color: #0f172a;
+}
+
+/* Color Swatches */
+.pdp-color-btn {
+  transition: all 0.2s ease;
+}
+
+.pdp-color-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Zoom cursor */
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+/* Active Tab Underline Animation */
+.pdp-tab-nav-btn {
+  position: relative;
+}
+
+/* Lightbox Modal Animation */
+#image-lightbox-modal img {
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#image-lightbox-modal.active img {
+  transform: scale(1);
+}
+
+
 
